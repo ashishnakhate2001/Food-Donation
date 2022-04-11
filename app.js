@@ -20,9 +20,17 @@ app.get("/", function(req, res){
   res.render("home")
 });
 
+app.get("/recive-food", function(req, res){
+  res.render("receive-food")
+});
 
+app.get("/donate-food", function(req, res){
+  res.render("donate-food")
+});
 
-
+app.get("/Guest", function(req, res){
+  res.render("Guest")
+});
 
 
 
