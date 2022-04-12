@@ -24,7 +24,9 @@
 
 <body>
 
-
+<!-- <% posts.forEach(function(post){ %>
+  <% console.log(post.name) %>
+<% }) %> -->
 
 
   <section id="title">
@@ -32,7 +34,7 @@
       <!-- Nav Bar -->
 
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">Food Donation</a>
+        <a class="navbar-brand" href="/">Food Donation</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,7 +45,7 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">About us</a>
+              <a class="nav-link" href="">Aboutus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">News</a>
@@ -54,7 +56,7 @@
 
             <div class="main-nav">
 
-              <li><a class="signin" href="#0">Sign in</a></li>
+              <li><a class="signin" href="#0">Signin</a></li>
             </div>
             <div class="main-nav">
               <li><a class="signup" href="#0">Signup</a></li>
@@ -70,8 +72,37 @@
 
 
     <h1 style="padding:0px 0px 0px 50px">Recieve Food</h1>
-    <div class="row" style="padding:1% 15%;">
-      <div class="col-lg-6">
+    <div class="row" style="padding:1% 10%;">
+      <div class="col-lg-4">
+      <div class="card" style="text-align:center;" style="width: 18rem;">
+        <img class="card-img-top"style="width:100%" src="images/1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text"> <%= startingContent %> </p>
+          <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
+        </div>
+      </div>
+    </div>
+
+<% posts.forEach(function(post){ %>
+
+    <div class="col-lg-4">
+      <div class="card" style="text-align:center;" style="width: 18rem;">
+        <img class="card-img-top"style="width:100%" src="images/1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Name :&nbsp; <%= post.name %></p>
+          <p>Email :&nbsp; <%= post.email %></p>
+          <p>Phone :&nbsp; <%= post.phone %></p>
+          <p>Food Type :&nbsp; <%= post.food %></p>
+          <p>address :&nbsp; <%= post.address %></p>
+          <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
+        </div>
+      </div>
+    </div>
+<% }) %>
+
+    <div class="col-lg-4">
       <div class="card" style="text-align:center;" style="width: 18rem;">
         <img class="card-img-top"style="width:100%" src="images/1.jpg" alt="Card image cap">
         <div class="card-body">
@@ -81,7 +112,8 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-6">
+
+    <div class="col-lg-4">
       <div class="card" style="text-align:center;" style="width: 18rem;">
         <img class="card-img-top"style="width:100%" src="images/1.jpg" alt="Card image cap">
         <div class="card-body">
@@ -91,29 +123,10 @@
         </div>
       </div>
     </div>
+
     </div>
-    <div class="row" style="padding:5% 15%;">
-      <div class="col-lg-6">
-      <div class="card" style="text-align:center;" style="width: 18rem;">
-        <img class="card-img-top"style="width:100%" src="images/1.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="card" style="text-align:center;" style="width: 18rem;">
-        <img class="card-img-top"style="width:100%" src="images/1.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
-        </div>
-      </div>
-    </div>
-    </div>
+
+
     <!-- Footer -->
 
-    <%- include('footer'); -%>
+      <%- include('partials/footer'); -%>
