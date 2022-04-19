@@ -92,7 +92,7 @@
             </div>
 
           </div>
-          <form class="myForm" style="color:#000;" method="post" action="/donate-food" >
+          <form class="myForm" style="color:#000;" method="post" action="/donate-food" enctype="multipart/form-data">
           <button type="submit" class="btn btn-dark btn-lg download-button" style="width:100%;"><i class="fa-solid fa-plate-utensils"></i> Donate Food</button>
         </div>
         <div class="col-lg-4">
@@ -103,7 +103,7 @@
 
                 <p>
                   <label>Name
-                    <input type="text" name="customer_name" required>
+                    <input type="text" name="customer_name">
                   </label>
                 </p>
 
@@ -127,7 +127,7 @@
 
                 <!-- Upload image input-->
                 <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" name="image">
                     <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose Image</label>
                     <div class="input-group-append">
                         <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
