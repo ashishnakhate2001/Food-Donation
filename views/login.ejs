@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Food Donation</title>
+
+  <!-- Bootstrap 4.0 CSS cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\styles.css" />
+  <link rel="stylesheet" href="css\style.css" />
+
+  <!-- Font Awaesome -->
+  <script src="https://kit.fontawesome.com/58a6d29562.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS cdn -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type = "text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Food Donation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Aboutus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">News</a>
+            </li>
+
+            <div class="main-nav">
+
+              <li><a class="signin" href="#0">Login</a></li>
+            </div>
+            <!-- <div class="main-nav">
+              <li><a class="signup" href="#0">Signup</a></li>
+            </div> -->
+      </nav>
+      </ul>
+    </div>
+    </nav>
+
+  </section>
+
+
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+
+          <form style="margin-top: 30%" method="post" action="/login">
+            <h3><b></b>Log In</h3>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter a valid email address" name="lemail" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password" name="lpassword"/>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body">Forgot password?</a>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="signup" class="link-danger">Register</a></p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <%- include('partials/footer'); -%>

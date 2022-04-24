@@ -427,10 +427,20 @@ ul, li {
 	border-bottom: 1px solid rgba(246, 71, 71, 1);
 }
 
-#login, #signup, #reset-password {
-  display: none;
-}
 
-#login.is-selected, #signup.is-selected, #reset-password.is-selected {
-  display: block;
+/* login signup form */
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
 }

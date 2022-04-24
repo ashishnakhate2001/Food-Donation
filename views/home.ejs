@@ -54,7 +54,7 @@
 
             <div class="main-nav">
 
-              <li><a class="signin" href="#0">Login</a></li>
+              <li><a class="signin" href="login">Login</a></li>
             </div>
             <!-- <div class="main-nav">
               <li><a class="signup" href="#0">Signup</a></li>
@@ -184,8 +184,8 @@
         <h1>Together we can make a difference.</h1>
         <h4>Over website helps those people who have no Hope</h5>
           <a href="/donate-food"><button type="button" class="btn btn-dark btn-lg download-button">Donate Food</button></a>
-          <a href="/recive-food"><button type="button" class="btn btn-outline-light btn-lg download-button"> Receive Food</button></a>
-<!---  /* ****** Guest Path ****** */  --->
+          <a href="/recive-food"><button type="button" class="btn btn-outline-light btn-lg download-button">Ask for Food</button></a>
+          <!---  /* ****** Guest Path ****** */  --->
           <a href="/Guest"><button type="button" class="btn btn-outline-light btn-lg download-button">Guest</button></a>
       </div>
       <div class="col-lg-6">
@@ -231,27 +231,21 @@
       <div class="cantainer-fluid">
         <div class="row">
 
-          <div class="col-lg-3 ">
-
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top latest-donation-image" src="images/user.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Sayndeep</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">View Profile</a>
-              </div>
-            </div>
-          </div>
+<% donations.forEach(function(donation){ %>
           <div class="col-lg-3">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top latest-donation-image" src="images/user.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Ashish Nakhate</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><%= donation.name %></h5>
+                <p class="card-text"><%= donation.email %></p>
+                <p class="card-text"><%= donation.phone %></p>
                 <a href="#" class="btn btn-primary">View Profile</a>
+
               </div>
             </div>
           </div>
+<% }) %>
+
           <div class="col-lg-3">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top latest-donation-image" src="images/user.png" alt="Card image cap">
@@ -262,28 +256,22 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top latest-donation-image" src="images/user.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Kausik Pathak</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">View Profile</a>
-              </div>
-            </div>
-          </div>
-        </div>
+
   </section>
+
+
+
+
 
 
   <!-- News -->
   <section id="news">
-  <div class="row" style="padding:4% 1%;">
-    <div class="col-lg-6">
-      <img class="news-image" src="images/news.png" alt="food-donate-image">
-    </div>
-    <div class="col-lg-6" style="margin-right=" 3%">
-      <h1 style="color:#000;">Key facts about hunger in India.</h1>
+    <div class="row" style="padding:4% 1%;">
+      <div class="col-lg-6">
+        <img class="news-image" src="images/news.png" alt="food-donate-image">
+      </div>
+      <div class="col-lg-6" style="margin-right=" 3%">
+        <h1 style="color:#000;">Key facts about hunger in India.</h1>
 
         <ul>
           <li>
@@ -305,9 +293,10 @@
             51.4% women in the reproductive age (15-49 years) are anaemic
           </li>
         </ul>
+      </div>
     </div>
-  </div>
   </section>
+
 
   <!-- Testimonials -->
   <section id="testimonials">

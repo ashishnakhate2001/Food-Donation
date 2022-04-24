@@ -24,9 +24,7 @@
 
 <body>
 
-<!-- <% posts.forEach(function(post){ %>
-  <% console.log(post.name) %>
-<% }) %> -->
+
 
 
   <section id="title">
@@ -71,32 +69,33 @@
 
 
 
-    <h1 style="padding:0px 0px 0px 50px">Recieve Food</h1>
+    <h1 style="padding:0px 0px 0px 50px">Ask for Food</h1>
     <div class="row" style="padding:1% 10%;">
-      <div class="col-lg-4">
+      <!-- <div class="col-lg-4">
       <div class="card" style="text-align:center;" style="width: 18rem;">
-        <img class="card-img-top"style="width:100%" src="images/image_1.png" alt="Card image cap">
+        <img class="card-img-top"style="width:100%" src="images/1.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text"> <%= startingContent %> </p>
           <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
-<% posts.forEach(function(post){ %>
+<% donations.forEach(function(donation){ %>
 
     <div class="col-lg-4">
       <div class="card" style="text-align:center;" style="width: 18rem;">
-        <img class="card-img-top"style="width:100%" src="FDimg/image_<%=post.image%>" alt="Card image cap">
+        <img class="card-img-top"style="width:100%" src="FDimg/image_<%=donation.image%>" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">Name :&nbsp; <%= post.name %></p>
-          <p>Email :&nbsp; <%= post.email %></p>
-          <p>Phone :&nbsp; <%= post.phone %></p>
-          <p>Food Type :&nbsp; <%= post.food %></p>
-          <p>address :&nbsp; <%= post.address %></p>
-          <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
+          <p class="card-text">Name :&nbsp; <%= donation.name %></p>
+          <p>Email :&nbsp; <%= donation.email %></p>
+          <p>Phone :&nbsp; <%= donation.phone %></p>
+          <p>Food Type :&nbsp; <%= donation.food %></p>
+          <p>Food Name :&nbsp; <%= donation.foodN %></p>
+          <p>address :&nbsp; <%= donation.address %></p>
+          <a href="#" class="btn btn-primary" style="text-align:center;" id="CTN" onclick="textColor()"><%= donation.status %></a>
         </div>
       </div>
     </div>
@@ -108,7 +107,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
+          <a href="#" class="btn btn-primary" style="text-align:center;" id="CTN" onclick="textColor()">Click to Need</a>
         </div>
       </div>
     </div>
@@ -119,12 +118,19 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary" style="text-align:center;">Click to Recieve</a>
+          <a href="#" class="btn btn-primary" style="text-align:center;" id="CTN" onclick="textColor()">Click to Need</a>
         </div>
       </div>
     </div>
 
     </div>
+    <script type="text/javascript">
+      function textColor()
+      {
+    document.getElementById("CTN").style.background ='green';
+    document.getElementById("CTN").innerHTML ="Request send for Need";
+      }
+    </script>
 
 
     <!-- Footer -->
