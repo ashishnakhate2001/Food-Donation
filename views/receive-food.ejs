@@ -49,7 +49,7 @@
               <a class="nav-link" href="">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">News</a>
+              <a class="nav-link" href="profile">profile</a>
             </li>
 
             <div class="main-nav">
@@ -83,7 +83,9 @@
     </div> -->
 
 <% donations.forEach(function(donation){ %>
+<form class="" action="receive-food" method="post">
 
+</form>
     <div class="col-lg-4">
       <div class="card" style="text-align:center;" style="width: 18rem;">
         <img class="card-img-top"style="width:100%" src="FDimg/image_<%=donation.image%>" alt="Card image cap">
@@ -95,7 +97,7 @@
           <p>Food Type :&nbsp; <%= donation.food %></p>
           <p>Food Name :&nbsp; <%= donation.foodN %></p>
           <p>address :&nbsp; <%= donation.address %></p>
-          <a href="#" class="btn btn-primary" style="text-align:center;" id="CTN" onclick="textColor()"><%= donation.status %></a>
+          <button type="submit" href="#" class="btn btn-primary" style="text-align:center;" id="CTN" name="a"><%= donation.status %></button>
         </div>
       </div>
     </div>

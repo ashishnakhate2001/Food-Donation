@@ -169,74 +169,71 @@
   </section>
 
 
-<!-- Section doners reciver button -->
+  <!-- Section doners reciver button -->
   <!-- Donar/Receive -->
   <section id="Donar-receiver-button">
     <div class="row">
       <div class="col-lg-5">
-        <a href="donate-food"><button type="button" class="btn btn-dark btn-lg download-button guest-page-btn"><i class="fa-solid fa-plate-utensils"></i>Donate Food</button></a>
+        <a href="/donate-food"><button type="button" class="btn btn-dark btn-lg download-button guest-page-btn"><i class="fa-solid fa-plate-utensils"></i>Donate Food</button></a>
       </div>
       <div class="col-lg-5">
-        <a href="receive-food"><button type="button" class="btn btn-dark btn-lg download-button guest-page-btn"><i class="fa-solid fa-plate-utensils"></i>Receive Food</button> </a>
+        <a href="/recive-food"><button type="button" class="btn btn-dark btn-lg download-button guest-page-btn"><i class="fa-solid fa-plate-utensils"></i>Receive Food</button> </a>
       </div>
       <div class="col-lg-2">
-        <a href="receive-food.html"><button type="button" class="btn btn-dark btn-lg download-button login-margin guest-page-btn"><i class="fa-solid fa-plate-utensils"></i>Log in</button></a>
+        <a href="/login"><button type="button" class="btn btn-dark btn-lg download-button login-margin guest-page-btn"><i class="fa-solid fa-plate-utensils"></i>Log in</button></a>
       </div>
     </div>
-  </div>
+    </div>
 
 
+    <div class="col-lg-12">
+      <div class="card mb-4">
+        <div class="card-body">
 
-<div class="card-description">
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Name</p>
+            </div>
+            <div class="col-sm-3">
+              <p class="text-muted mb-0">Username</p>
+            </div>
+            <div class="col-sm-3">
+              <p class="text-muted mb-0">Email</p>
+            </div>
+            <div class="col-sm-3">
+              <p class="text-muted mb-0">Number of donation</p>
+            </div>
+          </div>
 
-</div>
-  <div class="row">
-    <div class="col-lg-5">
-      <div class="card bg-dark">
-        <h5>Card title</h5>
-        <h5>Card title</h5>
-        <h5>Card title</h5>
-        <h5>Card title</h5>
+
+          <% users.forEach(function(user){ %>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0"><%= user.name %></p>
+            </div>
+            <div class="col-sm-3">
+              <p class="text-muted mb-0"><%= user.username %></p>
+            </div>
+            <div class="col-sm-3">
+              <p class="text-muted mb-0"><%= user.email %></p>
+            </div>
+            <div class="col-sm-3">
+              <p class="text-muted mb-0"><%= user.Doners.length %></p>
+            </div>
+          </div>
+
+          <% }) %>
+        </div>
       </div>
-
     </div>
 
-    <div class="col-lg-5">
-      <h5>Card title</h5>
-      <h5>Card title</h5>
-      <h5>Card title</h5>
-      <h5>Card title</h5>
-    </div>
-
-    <div class="col-lg-2">
-<h5>Card title</h5>
-<h5>Card title</h5>
-<h5>Card title</h5>
-<h5>Card title</h5>
-    </div>
-  </div>
-
-</section>
 
 
 
-    <table cellspacing="20">
-    <tr>
-      <td>
-      <th>
-        <h4>Donar</h4>
-      </th>
-      </td>
-      <td>
-      <th>
-        <h4>Receiver</h4>
-      </th>
-      </td>
-    </tr>
-  </table>
 
 </body>
 
 <!-- Footer -->
 
-  <%- include('partials/footer'); -%>
+<%- include('partials/footer'); -%>
