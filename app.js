@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://localhost:27017/fDB');
+mongoose.connect('mongodb+srv://ashish:ashish123@cluster0.oixe4rc.mongodb.net/fDB');
 
 
 
@@ -52,87 +52,6 @@ const fruitSchema = new mongoose.Schema({
 });
 
 const Fruit = mongoose.model("Fruit", fruitSchema);
-
-
-
-// people
-const peopleSchema = new mongoose.Schema({
-  userid: String,
-  password:[{
-   fruitSchema
-  }]
-});
-
-const People = mongoose.model("People", peopleSchema);
-
-
-// data input of fruit and people
-// const p = new Fruit ({
-//   name:"Ashish",
-//   rating: "1"
-// });
-//
-// p.save();
-//
-// const b = new Fruit ({
-//   name:"Ashish u",
-//   rating: "23"
-// });
-//
-// b.save();
-//
-
-// const people = new People ({
-//   userid:"ashish123",
-//   password: a
-// });
-//
-// people.save();
-
-// People.updateOne({_id: "6266fdd7748f9fa40ac681a4"}, {password: {b}}, function(err){
-//   if(err){
-//   console.log("update one err");
-//   }
-//   else{
-//     console.log("update one success full")
-//   }
-// });
-
-
-// People.insertMany({name: "ashish123"}, {password:[b]}, function(err, peooples){
-//     if(err){
-//     console.log("update one err");
-//     }
-//     else{
-//       console.log("update one success full")
-//     }
-// });
-
-// People.findOne({name: "ashish123"}, function(err, foundList){
-//       foundList.password.push(b);
-//       foundList.save();
-// });
-
-// People.findOne({name: "ashish123"},function(err, peoples){
-//   // let a = peoples.password[0]._id.toHexString();
-//   //   console.log(a);
-// // console.log(peoples.password[0]._id);
-// console.log(peoples);
-// });
-
-
-
-// Fruit.findOne(function(err, fruits){
-//
-// console.log(fruits);
-// for each
-//
-// });
-
-
-
-
-
 
 // Donation Schema
 const donationSchema = new mongoose.Schema({
@@ -190,11 +109,6 @@ const auth = async (req, res, next)=>{
     const user = await User.findOne({_id:verifyUser._id});
 console.log("testing.......................................");
    console.log(user._id.toHexString());
-   // const donesanList = await User.findOne({_id: user._id.toHexString()});
-   // console.log(donesanList.Doners[0]._id.toHexString());
-   // console.log("length.............."+donesanList.Doners.length);
-
-
 
 
    req.token = token;
@@ -236,7 +150,8 @@ app.get("/signup", function(req, res) {
 });
 
 
-app.get("/recive-food", function(req, res) {
+app.get("/recive-food",auth , async function(req, res) {
+
   Donation.find({}, function(err, donations){
   res.render("receive-food", {
     startingContent: homeStartingContent,
@@ -269,9 +184,7 @@ app.get("/Guest", function(req, res) {
   });
 });
 
-User.find({}, function(err, users){
-  console.log(users[0].name)
-})
+
 
 
 
@@ -297,33 +210,6 @@ req.user.tokens = req.user.tokens.filter((currElement)=>{
 });
 
 
-// // donate food click to recive button
-// app.post("/receive-food", function(req, res) {
-//
-// // await  User.findOne({name: "Ashish"},function(err, users){
-// //     // let a = peoples.password[0]._id.toHexString();
-// //     //   console.log(a);
-// //   // console.log(peoples.password[0]._id);
-// //   console.log(peoples);
-// //   });
-//
-//
-//   // People.updateOne({_id: "6266fdd7748f9fa40ac681a4"}, {password: {b}}, function(err){
-//   //   if(err){
-//   //   console.log("update one err");
-//   //   }
-//   //   else{
-//   //     console.log("update one success full")
-//   //   }
-//   // });
-//   console.log(req.body.a);
-//   res.render("receive-food");
-// });
-
-
-
-
-
 //donate food form
 app.post("/donate-food", upload.single("image"),async function(req, res) {
 // passing data from donate food to app.js
@@ -341,6 +227,7 @@ app.post("/donate-food", upload.single("image"),async function(req, res) {
 
 
   donation.save();
+  console.log(donation);
   User.findOne({_id: id}, function(err, foundonation){
     if(err){
       console.log("food donation error")
@@ -395,12 +282,6 @@ const password = req.body.lpassword;
 
 const useremail = await User.findOne({email:email});
 
-
-
-  // User.findOne({name: "Ashish"},function(err, users){
-  // if(err){
-  //   console.log(err);
-  // }else{
 if(useremail.email === email && useremail.password === password){
   const token = await useremail.generateToken();
   console.log("the token part" + token);
@@ -410,7 +291,7 @@ if(useremail.email === email && useremail.password === password){
   httpOnly : true
   });
 
-   // console.log(cookie)
+
 
   console.log("log in success full");
   // cookies save and signout button enable
@@ -421,22 +302,8 @@ else{
   console.log("email or password not same");
   res.redirect("/login");
 }
-  // }
- // });
+
 });
-
-// // ganrating token
-// const createToken = async()=>{
-//   const token = await jwt.sign({_id: "626708c38cde1427af9582a6"}, "jiaeodkilsarliwkslrdoucooijchlerilsjh")
-//   (token);
-//
-//   const userVer = await jwt.verify(token, "jiaeodkilsarliwkslrdoucooijchlerilsjh", {expiresIn: "10 days"})
-//   console.log(userVer._id);
-// }
-//
-// createToken();
-
-// console.log(process.env.SECRET_KEY);
 
 
 
