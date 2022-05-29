@@ -260,7 +260,7 @@ console.log("the success part" + register);
   res.cookie("jwt", token, {
    //expires:new Date(Date.now() + 6000000000),
   expiresIn: '24h',
-  httpOnly : true
+  httpsOnly : true
   });
   // console.log(Cookie);
 
@@ -288,7 +288,7 @@ if(useremail.email === email && useremail.password === password){
   res.cookie("jwt", token, {
   // expires:new Date(Date.now() + 30000),
   expiresIn: '2d',
-  httpOnly : true
+  httpsOnly : true
   });
 
 
