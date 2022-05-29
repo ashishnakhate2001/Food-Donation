@@ -13,7 +13,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
-const port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 
 let img="";
 let id="";
@@ -308,6 +308,8 @@ else{
 
 
 
+
+
 app.listen(port, function() {
-  console.log("Server started on port 3000");
+  console.log("Server has started successfully");
 });
