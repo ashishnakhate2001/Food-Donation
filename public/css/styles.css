@@ -198,3 +198,21 @@ html {
     width: 100%;
   }
 }
+
+
+/* Add a keyframe animation */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to your elements */
+.navbar, .nav-item, .navbar-brand, button, img, p, h1, h2, h3, h4, h5, h6 {
+  animation: slideInFromTop 1s ease-out;
+}
