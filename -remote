@@ -1,0 +1,219 @@
+[33mcommit fadb960fda92b7792ea4a83b13a3117a215cf3f6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 17:07:43 2024 +0000
+
+    updated home
+
+[33mcommit 94a27ed7d0aeea36cca291a810ead9e5a3a8700c[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 16:56:16 2024 +0000
+
+    hide problem fix
+
+[33mcommit e4d24fd27596d79eb185268d29702aa7dc46ed06[m[33m ([m[1;32mreview[m[33m)[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 16:21:46 2024 +0000
+
+    vercel removed
+
+[33mcommit c6d98151c26af11a0ba21b922b2bb809de86d86f[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 16:03:17 2024 +0000
+
+    vercel file added
+
+[33mcommit 08e8a840d6c4a82b3535b2f37edb56205dbf53d9[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 09:33:17 2024 +0000
+
+    wrong email or password crash fix
+
+[33mcommit 0365bc053973e1cc060fcb71810456649438e3db[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 09:18:09 2024 +0000
+
+    main iamge align to center in mobile view
+
+[33mcommit 1a227f99662e9f2180b6a1ee4870d9f88b796ad0[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 09:11:51 2024 +0000
+
+    smooth scroll added
+
+[33mcommit fd0061fd7e91328af3bae544f9e538b5d6d5ab41[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 07:50:34 2024 +0000
+
+    last four donation show in home updated
+
+[33mcommit 2293924ce94acaf519398600c1e168a01a3747f8[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun May 12 07:38:29 2024 +0000
+
+    code align fixing
+
+[33mcommit 69b8121bb3e22c0f5ee25de488548a31ac86fdce[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 21:39:42 2022 +0530
+
+    Delete profile.ejs
+    
+    profile deleted
+
+[33mcommit 4d449d0c95f68e34b96abf33b562ca150278e504[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 21:34:54 2022 +0530
+
+    Update home.ejs
+    
+    news remove
+
+[33mcommit 308f5e06f90ad0710a750660255a35b49a41743f[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 20:55:46 2022 +0530
+
+    Update login.ejs
+    
+    email to text
+
+[33mcommit a23fd7e3f01e1323b64b64f5d1456e29feed044a[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:51:54 2022 +0530
+
+    Update donate-food.ejs
+    
+    required keyword added on food donation page
+
+[33mcommit 46311159170e514af4a020abcb2692c445fa5605[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:37:38 2022 +0530
+
+    Update home.ejs
+
+[33mcommit 966fdefead94657f1bf1d987fd0960806766d08a[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:14:17 2022 +0530
+
+    Update .gitignore
+
+[33mcommit cbe6dacae00b8282418681f2a36aa30096094323[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:13:50 2022 +0530
+
+    Add files via upload
+
+[33mcommit 78ed4da162e339ea8e9425143209b454aab3653b[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:13:25 2022 +0530
+
+    Update .gitignore
+
+[33mcommit 7a9e56cce752bc4830c53376e2f87c1647cc6b63[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:12:21 2022 +0530
+
+    Update .gitignore
+
+[33mcommit 39bca0301238a30539ed935446825bccbda338b0[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:11:39 2022 +0530
+
+    Update app.js
+
+[33mcommit 98c917214ebbe892d0419da4de49e4425d02f4f3[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 16:10:51 2022 +0530
+
+    Add files via upload
+
+[33mcommit 8c17516899590b861001c0a107fdc8db6a7fd862[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 15:57:21 2022 +0530
+
+    Update app.js
+
+[33mcommit cd4d32959d21fa081394e9c379d4851359a4defe[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 15:55:19 2022 +0530
+
+    Update app.js
+    
+    app.js file updated
+
+[33mcommit 6d5f3b624cb6dd28ec3652c5b526620498509f28[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 15:06:31 2022 +0530
+
+    Update app.js
+
+[33mcommit 9f6ab0b3555a7e66bd83d7823c82dad2bffc4cf9[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 15:00:51 2022 +0530
+
+    Update app.js
+
+[33mcommit 452b389b68abf5680fb07815cc68e7cf04a46fb3[m
+Author: ashishnakhate2001 <102651809+ashishnakhate2001@users.noreply.github.com>
+Date:   Sun May 29 14:55:00 2022 +0530
+
+    Update package.json
+
+[33mcommit e81f25d1d440a0dd8b256e0ecce1f9af7d8a8313[m
+Author: ashishnakhate2001 <ashishnakhate2001@gmail.com>
+Date:   Sat May 28 13:07:03 2022 +0530
+
+    mogodb cloud database done
+
+[33mcommit 130100cd957ef8785599805d516c0a36e13e4e3d[m
+Author: ashishnakhate2001 <ashishnakhate2001@gmail.com>
+Date:   Fri Apr 29 02:44:47 2022 +0530
+
+    navigation in guest done
+
+[33mcommit 5f31dabb9a1676365221c16f24ef41ae87c9a303[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Mon Apr 25 01:05:37 2022 +0530
+
+    login signup done
+
+[33mcommit 516c31a927aeb848dd66484e673f17c786e3446e[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Wed Apr 20 00:41:36 2022 +0530
+
+    image code added
+
+[33mcommit 9a662165bda3de3d24782f49bdf0ce2a6adae4a6[m[33m ([m[1;31morigin/html-ejs[m[33m)[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Tue Apr 12 11:50:02 2022 +0530
+
+    node js food donate and resive done
+
+[33mcommit 844e3527a2f87103ebfba9412ac21963fc4b7713[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Mon Apr 11 10:09:59 2022 +0530
+
+    footer repeated code removed
+
+[33mcommit d24283c4b6a3b747383b13ef2f575629256751dc[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Mon Apr 11 09:44:46 2022 +0530
+
+    navigation done
+
+[33mcommit b24ed8b4df21414d2aa4e580ed9c53d834326dbb[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Mon Apr 11 08:40:21 2022 +0530
+
+    converted all html file into ejs file
+
+[33mcommit de29f168247bdd50ba944111acec7b74f2850038[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Mon Apr 11 08:27:23 2022 +0530
+
+    home file complate html to ejs
+
+[33mcommit 5f8cea95a5b3bb9efdd508f090dde8efa6715ff5[m
+Author: Ashish Nakhate <ashishnakhate2001@gmail.com>
+Date:   Sun Apr 10 22:29:03 2022 +0530
+
+    configuration of file with express
