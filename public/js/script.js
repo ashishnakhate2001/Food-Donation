@@ -199,3 +199,9 @@ function textColor() {
   document.getElementById("CTN").style.background = "green";
   document.getElementById("CTN").innerHTML = "Request send for Need";
 }
+
+// [public/js/script.js](public/js/script.js)
+
+document.querySelector("#yourElement").addEventListener("click", function() {
+  document.querySelector("#targetElement").scrollIntoView({ behavior: 'smooth' });
+});

@@ -178,3 +178,9 @@ label {
 .card-description {
   background-color: #fff;
 }
+
+/* [public/css/style.css](public/css/style.css) */
+
+html {
+  scroll-behavior: smooth;
+}
