@@ -1,7 +1,6 @@
-body{
-  font-family: 'ubuntu', sans-serif;
+body {
+  font-family: "ubuntu", sans-serif;
 }
-
 
 #title {
   background-color: #ff4c68;
@@ -13,186 +12,169 @@ body{
 }
 
 h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
   font-size: 3.5rem;
   color: #fff;
 }
 
-h2{
-  font-family: 'Ubuntu', sans-serif;
+h2 {
+  font-family: "Ubuntu", sans-serif;
   font-size: 3.5rem;
   line-height: 1.5;
 }
 
-h3{
-  font-family: 'Ubuntu', sans-serif;
-
+h3 {
+  font-family: "Ubuntu", sans-serif;
 }
-h4{
-  font-family: 'Ubuntu', sans-serif;
+h4 {
+  font-family: "Ubuntu", sans-serif;
   color: #fff;
 }
 
-p{
+p {
   color: #8f8f8f;
-  text-align: center;;
+  text-align: center;
 }
-
 
 /* navigation Menue */
 
-.navbar{
-  padding:0 0 4rem;
+.navbar {
+  padding: 0 0 4rem;
 }
 
-.navbar-brand{
-  font-family: 'Ubuntu', sans-serif;
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.nav-item{
+.nav-item {
   padding: 14px 18px;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.2rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-.Guest{
+.Guest {
   background-color: #ff4c68;
   color: #fff;
 }
 
-
-
 /* Download Button */
 
-.download-button{
+.download-button {
   margin: 5% 3% 5% 0%;
 }
 
-
-
-
 /* Title Image */
 
-.title-image{
-
+.title-image {
   /* transform: rotate(25deg); */
   width: 120%;
-  border-radius: 5%
+  border-radius: 5%;
 }
 
 /* Features section */
 
-#features{
+#features {
   padding: 7% 15%;
 }
 
-.features-box{
+.features-box {
   text-align: center;
   padding: 5%;
 }
 
-.icon{
+.icon {
   color: #ef8172;
   margin-bottom: 1rem;
 }
 
-.icon:hover{
+.icon:hover {
   color: #ff4c68;
 }
 
 /* Testimonials section */
 
-#testimonials{
-
+#testimonials {
   text-align: center;
-  background-color:#ef8172 ;
+  background-color: #ef8172;
   color: #fff;
 }
 
-.testimonial-image{
+.testimonial-image {
   width: 10%;
   border-radius: 100%;
-  margin: 20px
+  margin: 20px;
 }
 
-.carousel-item{
+.carousel-item {
   padding: 7% 15%;
 }
 
 /* Press section */
 
-#press{
+#press {
   background-color: #ef8172;
   text-align: center;
   padding-bottom: 3%;
 }
 
-.press-logo{
-  with:15%;
+.press-logo {
+  with: 15%;
   margin: 20px 20px 50px;
   padding: 15%;
 }
 
-
 /* Latest Donation */
 
-.latest-donation-image{
+.latest-donation-image {
   border-radius: 100%;
-
 }
 
-.card-title{
-text-align: center;
+.card-title {
+  text-align: center;
 }
 
-
-#top-donation{
+#top-donation {
   text-align: center;
   background-color: #ef8172;
   padding: 2% 5%;
-
 }
 
 /* News */
-.news-image{
+.news-image {
   width: 100%;
-  border-radius: 5%
+  border-radius: 5%;
 }
 
 /* Footer */
-#footer{
-  padding: 1.5%
+#footer {
+  padding: 1.5%;
 }
-
 
 /* Need-food */
-label{
-  color:#000;
+label {
+  color: #000;
 }
 
-
-
 /* Guest */
-.login-margin{
+.login-margin {
   margin-top: 13.5%;
 }
 
-.guest-page-btn{
-  width: 100%
+.guest-page-btn {
+  width: 100%;
 }
 
-#Donar-receiver-button{
+#Donar-receiver-button {
   background-color: #ff4c68;
-    text-align: center;
-    padding: 0% 5%;
+  text-align: center;
+  padding: 0% 5%;
 }
 
-.card-description{
+.card-description {
   background-color: #fff;
-
 }
