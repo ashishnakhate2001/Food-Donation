@@ -184,3 +184,17 @@ label {
 html {
   scroll-behavior: smooth;
 }
+
+.main-image {
+  max-width: 120%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .main-image {
+    width: 100%;
+  }
+}
