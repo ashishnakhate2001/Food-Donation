@@ -254,15 +254,8 @@ app.post("/login", async function (req, res) {
 
   const useremail = await User.findOne({ email: email });
 
+  if (useremail) {
   if (useremail.email === email && useremail.password === password) {
-    const token = await useremail.generateToken();
-    console.log("the token part" + token);
-    res.cookie("jwt", token, {
-      // expires:new Date(Date.now() + 30000),
-      expiresIn: "2d",
-      httpOnly: true,
-    });
-
     console.log("log in success full");
     // cookies save and signout button enable
     button = "logout";
@@ -271,6 +264,10 @@ app.post("/login", async function (req, res) {
     console.log("email or password not same");
     res.redirect("/login");
   }
+} else {
+  console.log("email not found");
+  res.redirect("/login");
+}
 });
 
 app.listen(port, function () {
